@@ -1,12 +1,20 @@
-﻿System.Console.WriteLine ("Введите число");
+﻿System.Console.WriteLine ("Введите число > 0");
 int number = Convert.ToInt32(Console.ReadLine());
-int a =2;
-int b = number% a;
-if (b==0)
+int b = number% 2; //остаток от деления
+if(number<0)
 {
-   System.Console.Write("ДА");
+   System.Console.WriteLine ("Вы ввели отрицательное число");
+   System.Console.WriteLine ("Введите число > 0");
 }
-else 
+System.Console.Write("Вcе четные числа от 1 до ");  
+System.Console.WriteLine(number);   
+for(int i =1; i < number; i++)
 {
-System.Console.Write("НЕТ");
+  if(i % 2 == 0)
+   {
+
+   System.Console.WriteLine (i);
+   }
+  
 }
+
