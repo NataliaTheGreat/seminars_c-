@@ -17,7 +17,9 @@ else
   }
   else
   {
-   System.Console.WriteLine ($"Удалили вторую цифру и получили: {number/100}{number%10}"); 
+   number = (number/100)*10 + number%10;
+   System.Console.WriteLine ($"Удалили вторую цифру и получили: {number}"); 
+   //System.Console.WriteLine ($"Удалили вторую цифру и получили: {number/100}{number%10}"); 
   }
 
 
