@@ -11,8 +11,6 @@ if (number<100)
  }
 else
   {
-  //int number2 = number/10;
-  //System.Console.WriteLine (number2);
   System.Console.Write("Вторая цифра числа ");
   System.Console.WriteLine (number%10);
  
