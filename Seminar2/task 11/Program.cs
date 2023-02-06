@@ -6,7 +6,7 @@
 
 System.Console.WriteLine ("Введите трехзначное число");
 int number = Convert.ToInt32(Console.ReadLine());
-if (number<100) 
+if (number<100)
 {
   System.Console.WriteLine ("Это двухзначное число. Перезапустите программу");  
 }
@@ -17,11 +17,7 @@ else
   }
   else
   {
-  int number2 = number/100;
-  int number3 = number%10;
-  System.Console.WriteLine ("Удалили вторую цифру и получили"); 
-  System.Console.Write (number2);
-  System.Console.Write (number3);
+   System.Console.WriteLine ($"Удалили вторую цифру и получили: {number/100}{number%10}"); 
   }
 
 
