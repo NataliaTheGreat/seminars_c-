@@ -5,13 +5,16 @@
 
 System.Console.WriteLine ("Введите число");
 int number = Convert.ToInt32(Console.ReadLine());
+while (number>1000)
+  {
+   number =number/10; 
+  }  
 if (number<100) 
  {
   System.Console.WriteLine ("Третьей цифры нет");  
  }
-else
-  {
-  System.Console.Write("Вторая цифра числа ");
-  System.Console.WriteLine (number%10);
- 
-  }
+ else  
+   {
+     System.Console.WriteLine ($"третья цифра числа: {number%10}"); 
+    }
+   
