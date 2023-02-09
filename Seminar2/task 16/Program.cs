@@ -9,28 +9,25 @@ System.Console.WriteLine ("Введите первое число");
 int a = Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine ("Введите второе число");
 int b = Convert.ToInt32(Console.ReadLine());
-if (a<b)
-{
-  if (b==a*a)
+if (b==a*a)
   {
    System.Console.WriteLine ("да"); 
   }
-  else
+  else  if (a==b*b)
   {
-    System.Console.WriteLine ("нет"); 
+    System.Console.WriteLine ("да"); 
   }
-}
+
 else
-{
-    if (a==b*b)
-  {
-   System.Console.WriteLine ("да"); 
-  }
-  else
+   
   {
     System.Console.WriteLine ("нет"); 
   }
-}
+
+
+
+
+
 
 
 
