@@ -19,6 +19,8 @@ return  number%10;
 System.Console.WriteLine ("Введите пятизначное число");
 int number = Convert.ToInt32(Console.ReadLine());
 
+if (number>=10000 && number<99999 )
+{
 int fifth   =  Remainder(number);
 int number2 =  NewNumber (number);
 int fourth  =  Remainder(number2);
@@ -39,3 +41,8 @@ if (first==fifth && second==fourth)
   System.Console.WriteLine ("Является палиндромом");
 else
   System.Console.WriteLine ("Не является палиндромом");
+}
+else
+{
+  System.Console.WriteLine ("Перезапустите программу и введите пятизначное число");
+}
