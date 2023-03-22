@@ -20,9 +20,3 @@ else
   {
   System.Console.WriteLine ($"Некратно, остаток: {a%b}");
   }
-
-
-
-
-
-
